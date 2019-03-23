@@ -4,7 +4,6 @@ import Instructions from './components/Instructions';
 import Pictures from './components/Pics';
 import Pics from "./pics";
 import Container from "./components/Container"
-import ContainerFluid from "./components/ContainerFluid"
 import Footer from "./components/Footer"
 
 class App extends Component {
@@ -52,19 +51,17 @@ class App extends Component {
       <div className="App">
         <Container>
           <nav className="navbar navbar-white bg-white">
-            <span className="navbar-brand mb-0 h1">Clicky Game</span>
-            <span className="text-center">Click an Image to get started</span>
-            <span>  
-              <ul>
+            <a className="navbar-brand mb-0 h1"><h1>Clicky Game</h1></a>
+              <ul style={{ display: "inline" }}>
               <li>Score: {this.state.score}</li>
               <li>Top Score: {this.state.highScore}</li>
-            </ul></span>
+            </ul>
           </nav>
         </Container>
         <Instructions></Instructions><br></br><br></br>
         <Container>
-          <div className="row">
-            <div className="col" style={{ marginRight: "auto", marginLeft: "auto" }}>
+          <div className="row" style={{ marginRight: "auto", marginLeft: "auto" }}>
+            <div className="col-lg-12">
               {
                 this.state.Pics.map((pic) => (
                   <Pictures
