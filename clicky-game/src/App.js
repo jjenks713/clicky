@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import Navbar from "./components/Navbar";
 import Instructions from './components/Instructions';
 import Pictures from './components/Pics';
 import Pics from "./pics";
@@ -55,9 +54,10 @@ class App extends Component {
           <nav className="navbar navbar-white bg-white">
             <span className="navbar-brand mb-0 h1">Clicky Game</span>
             <span className="text-center">Click an Image to get started</span>
-            <span>  <ul>
-              <li>Score: {this.score}</li>
-              <li>Top Score: {this.highScore}</li>
+            <span>  
+              <ul>
+              <li>Score: {this.state.score}</li>
+              <li>Top Score: {this.state.highScore}</li>
             </ul></span>
           </nav>
         </Container>
@@ -76,10 +76,7 @@ class App extends Component {
             </div>
           </div><br></br><br></br>
         </Container>
-
-        {/* <ContainerFluid> */}
         <Footer></Footer>
-        {/* </ContainerFluid> */}
       </div>
     );
   }
