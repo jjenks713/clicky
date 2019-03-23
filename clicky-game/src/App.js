@@ -16,47 +16,70 @@ class App extends Component {
     highScore: 0
   };
 
+  gameOver = () => {
+    if (this.state.score > this.state.highScore) {
+      this.setState({ highScore: this.state.score }, function () {
+        console.log(this.state.highScore);
+      });
+    }
+    this.state.Pics.forEach(pic => {
+      pic.count = 0;
+    });
+    alert(`Game Over :( \nscore: ${this.state.score}`);
+    this.setState({ score: 0 });
+    return true;
+  }
+
   clickImage = id => {
-    alert(id, "clicking an image");
-    // // Filter this.state.friends for friends with an id not equal to the id being removed
-    // const Pics = this.state.Pics.filter(pic => pic.id !== id);
-    // // Set this.state.friends equal to the new friends array
-    // this.setState({ Pics });
+    // alert("clicking an image", id);
+    this.state.Pics.find((o, i) => {
+      if (o.id === id) {
+        if (Pics[i].count === 0) {
+          Pics[i].count = Pics[i].count + 1;
+          this.setState({ score: this.state.score + 1 }, function () {
+            console.log(this.state.score);
+          });
+          this.state.Pics.sort(() => Math.random() - 0.5)
+          return true;
+        } else {
+          this.gameOver();
+        }
+      }
+    });
   };
 
   render() {
     return (
       <div className="App">
-        <Navbar></Navbar>
-        <Instructions></Instructions>
+        <Container>
+          <nav className="navbar navbar-white bg-white">
+            <span className="navbar-brand mb-0 h1">Clicky Game</span>
+            <span className="text-center">Click an Image to get started</span>
+            <span>  <ul>
+              <li>Score: {this.score}</li>
+              <li>Top Score: {this.highScore}</li>
+            </ul></span>
+          </nav>
+        </Container>
+        <Instructions></Instructions><br></br><br></br>
         <Container>
           <div className="row">
             <div className="col" style={{ marginRight: "auto", marginLeft: "auto" }}>
               {
                 this.state.Pics.map((pic) => (
-                <Pictures 
-                clickImage={this.clickImage}
-                id={pic.id}
-                key={pic.id}
-                image={pic.image}/>)
+                  <Pictures
+                    clickImage={this.clickImage}
+                    id={pic.id}
+                    key={pic.id}
+                    image={pic.image} />)
                 )}
             </div>
-          </div>
-          {/* {this.state.friends.map(friend => (
-          <FriendCard
-            removeFriend={this.removeFriend}
-            id={friend.id}
-            key={friend.id}
-            name={friend.name}
-            image={friend.image}
-            occupation={friend.occupation}
-            location={friend.location}
-          />
-        ))} */}
+          </div><br></br><br></br>
         </Container>
-        {/* <ContainerFluid>
-          <Footer></Footer>
-        </ContainerFluid> */}
+
+        {/* <ContainerFluid> */}
+        <Footer></Footer>
+        {/* </ContainerFluid> */}
       </div>
     );
   }

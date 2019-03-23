@@ -2,61 +2,73 @@
     {
         "id": 1,
         "name": "Rick",
-        "image": "http://upload.wikimedia.org/wikipedia/en/thumb/e/e9/Rick_and_Morty_characters_-_Rick_Sanchez.jpg/220px-Rick_and_Morty_characters_-_Rick_Sanchez.jpg"
+        "image": "http://upload.wikimedia.org/wikipedia/en/thumb/e/e9/Rick_and_Morty_characters_-_Rick_Sanchez.jpg/220px-Rick_and_Morty_characters_-_Rick_Sanchez.jpg",
+        "count": 0
     },
     {
         "id": 2,
         "name": "Mr Poopybutthole",
-        "image": "https://static1.squarespace.com/static/51b3dc8ee4b051b96ceb10de/t/597a8d45197aeafed27fa4c2/1501203784283/"
+        "image": "https://static1.squarespace.com/static/51b3dc8ee4b051b96ceb10de/t/597a8d45197aeafed27fa4c2/1501203784283/",
+        "count": 0
     },
     {
         "id": 3,
         "name": "Squanchy",
-        "image": "https://www.geek.com/wp-content/uploads/2016/05/squanching.jpg"
+        "image": "https://www.geek.com/wp-content/uploads/2016/05/squanching.jpg",
+        "count": 0
     },
     {
         "id": 4,
         "name": "Morty",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_9rAiJZenTlt1m0--Ot1bwdscHTmcRDreAqdnn7PKLnERFSmkBw"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_9rAiJZenTlt1m0--Ot1bwdscHTmcRDreAqdnn7PKLnERFSmkBw",
+        "count": 0
     },
     {
         "id": 5,
         "name": "Birdperson",
-        "image": "https://sm.ign.com/t/ign_in/gallery/r/rick-and-m/rick-and-morty-the-10-best-supporting-characters_byr9.640.jpg"
+        "image": "https://sm.ign.com/t/ign_in/gallery/r/rick-and-m/rick-and-morty-the-10-best-supporting-characters_byr9.640.jpg",
+        "count": 0
     },
     {
         "id": 6,
         "name": "Jerry",
-        "image": "https://verbstomp.com/wp-content/uploads/2015/11/jerry_post.jpg"
+        "image": "https://verbstomp.com/wp-content/uploads/2015/11/jerry_post.jpg",
+        "count": 0
     },
     {
         "id": 7,
         "name": "Summer",
-        "image": "https://vignette.wikia.nocookie.net/rickandmorty/images/a/ad/Summer_is_cool.jpeg/revision/latest?cb=20160919183158"
+        "image": "https://vignette.wikia.nocookie.net/rickandmorty/images/a/ad/Summer_is_cool.jpeg/revision/latest?cb=20160919183158",
+        "count": 0
     },
     {
         "id": 8,
         "name": "Beth",
-        "image": "https://verbstomp.com/wp-content/uploads/2015/11/beth_post.jpg"
+        "image": "https://verbstomp.com/wp-content/uploads/2015/11/beth_post.jpg",
+        "count": 0
     },
     {
         "id": 9,
         "name": "Abradolf Lincler",
-        "image": "https://static.tvtropes.org/pmwiki/pub/images/13_1.jpg"
+        "image": "https://static.tvtropes.org/pmwiki/pub/images/13_1.jpg",
+        "count": 0
     },
     {
         "id": 10,
         "name": "Evil Morty",
-        "image": "https://imgix.ranker.com/user_node_img/50054/1001066676/original/the-rickest-morty-is-the-ultimate-villain-photo-u1?w=650&q=50&fm=pjpg&fit=crop&crop=faces"
+        "image": "https://imgix.ranker.com/user_node_img/50054/1001066676/original/the-rickest-morty-is-the-ultimate-villain-photo-u1?w=650&q=50&fm=pjpg&fit=crop&crop=faces",
+        "count": 0
     },
     {
         "id": 11,
         "name": "Snowball",
-        "image": "https://qph.fs.quoracdn.net/main-qimg-c8ebc167baaff48672ec021675cd7d4f.webp"
+        "image": "https://qph.fs.quoracdn.net/main-qimg-c8ebc167baaff48672ec021675cd7d4f.webp",
+        "count": 0
     },
     {
         "id": 12,
         "name": "Mr Meeseeks",
-        "image": "https://botlist.imgix.net/2635/c/submission1570rao3Hr-medium.jpg?auto=compress"
+        "image": "https://botlist.imgix.net/2635/c/submission1570rao3Hr-medium.jpg?auto=compress",
+        "count": 0
     }
 ]
