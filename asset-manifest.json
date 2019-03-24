@@ -1,13 +1,13 @@
 {
   "main.css": "/clicky/static/css/main.879c229f.chunk.css",
-  "main.js": "/clicky/static/js/main.96b6fc10.chunk.js",
-  "main.js.map": "/clicky/static/js/main.96b6fc10.chunk.js.map",
+  "main.js": "/clicky/static/js/main.305f5a34.chunk.js",
+  "main.js.map": "/clicky/static/js/main.305f5a34.chunk.js.map",
   "runtime~main.js": "/clicky/static/js/runtime~main.c6956f21.js",
   "runtime~main.js.map": "/clicky/static/js/runtime~main.c6956f21.js.map",
   "static/js/2.c464abec.chunk.js": "/clicky/static/js/2.c464abec.chunk.js",
   "static/js/2.c464abec.chunk.js.map": "/clicky/static/js/2.c464abec.chunk.js.map",
   "index.html": "/clicky/index.html",
-  "precache-manifest.842553f9615ded9cb85ac2f60d3da675.js": "/clicky/precache-manifest.842553f9615ded9cb85ac2f60d3da675.js",
+  "precache-manifest.8d6330141cb25c5309dbcc0853be89e5.js": "/clicky/precache-manifest.8d6330141cb25c5309dbcc0853be89e5.js",
   "service-worker.js": "/clicky/service-worker.js",
   "static/css/main.879c229f.chunk.css.map": "/clicky/static/css/main.879c229f.chunk.css.map"
 }
