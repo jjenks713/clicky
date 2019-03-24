@@ -27,6 +27,14 @@ class App extends Component {
     return true;
   }
   gameWin = () => {
+    if (this.state.score > this.state.highScore) {
+      this.setState({ highScore: this.state.score }, function () {
+        console.log(this.state.highScore);
+      });
+    }
+    this.state.Pics.forEach(pic => {
+      pic.count = 0;
+    });
       alert(`You Win!!`);
       this.setState({ score: 0 });
       return true;
@@ -39,14 +47,14 @@ class App extends Component {
         if (Pics[i].count === 0) {
           Pics[i].count = Pics[i].count + 1;
           this.setState({ score: this.state.score + 1 }, function () {
+            if (this.state.score === 12) {
+              this.gameWin();
+            }
             console.log(this.state.score);
           });
           this.state.Pics.sort(() => Math.random() - 0.5)
           return true;
-        } if (this.state.score > 11) {
-          this.gameWin();
-        }
-        else {
+        } else {
           this.gameOver();
         }
       }
