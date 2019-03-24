@@ -49,15 +49,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <Container>
-          <nav className="navbar navbar-white bg-white">
-            <a className="navbar-brand mb-0 h1"><h1>Clicky Game</h1></a>
-              <ul style={{ display: "inline" }}>
-              <li>Score: {this.state.score}</li>
-              <li>Top Score: {this.state.highScore}</li>
-            </ul>
-          </nav>
-        </Container> */}
         <div style={
           {
             backgroundImage: "url(" + "https://hdqwalls.com/download/rick-and-morty-5k-fan-art-by-2048x1152.jpg" + ")",
