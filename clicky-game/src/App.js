@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Instructions from './components/Instructions';
+// import Instructions from './components/Instructions';
 import Pictures from './components/Pics';
 import Pics from "./pics";
 import Container from "./components/Container"
@@ -49,7 +49,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Container>
+        {/* <Container>
           <nav className="navbar navbar-white bg-white">
             <a className="navbar-brand mb-0 h1"><h1>Clicky Game</h1></a>
               <ul style={{ display: "inline" }}>
@@ -57,10 +57,31 @@ class App extends Component {
               <li>Top Score: {this.state.highScore}</li>
             </ul>
           </nav>
-        </Container>
-        <Instructions></Instructions><br></br><br></br>
+        </Container> */}
+        <div style={
+          {
+            backgroundImage: "url(" + "https://hdqwalls.com/download/rick-and-morty-5k-fan-art-by-2048x1152.jpg" + ")",
+            // backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+          }}>
+          <div className="text-light">
+            <div className="text-light p-5 row text-left">
+              <div className="col-10">
+                <h1>Clicky Game!</h1><br></br>
+                <h2>Click a picture to start, don't click the same one twice</h2>
+              </div>
+              <div className="col-2">
+                <h2 className="text-right"><ul style={{ display: "inline", listStyle: "none" }}>
+                  <li>Top Score: {this.state.highScore}</li>
+                  <li>Score: {this.state.score}</li>
+                </ul></h2>
+              </div>
+            </div>
+          </div>
+        </div><br></br><br></br>
         <Container>
-          <div className="row" style={{ marginRight: "auto", marginLeft: "auto" }}>
+          <div className="row text-center" style={{ marginRight: "auto", marginLeft: "auto" }}>
             <div className="col-lg-12">
               {
                 this.state.Pics.map((pic) => (
