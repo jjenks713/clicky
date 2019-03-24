@@ -27,6 +27,11 @@ class App extends Component {
     this.setState({ score: 0 });
     return true;
   }
+  gameWin = () => {
+      alert(`You Win!!`);
+      this.setState({ score: 0 });
+      return true;
+  }
 
   clickImage = id => {
     // alert("clicking an image", id);
@@ -39,7 +44,10 @@ class App extends Component {
           });
           this.state.Pics.sort(() => Math.random() - 0.5)
           return true;
-        } else {
+        } if (this.state.score > 11) {
+          this.gameWin();
+        }
+        else {
           this.gameOver();
         }
       }
