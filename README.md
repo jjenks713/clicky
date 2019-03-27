@@ -1,5 +1,5 @@
 
-### CLicky Game
+# CLicky Game
 
 An iteractive React app. Clicky on an image to raise your score, don't click on the same image twice. Check it out below.
 
