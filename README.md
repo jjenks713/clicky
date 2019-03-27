@@ -1,3 +1,13 @@
+
+# CLicky Game
+
+An iteractive React app. Clicky on an image to raise your score, don't click on the same image twice. Check it out below.
+
+[Rick and Morty Clicky App](https://jjenks713.github.io/clicky/)
+
+See more info about React below
+-----
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
