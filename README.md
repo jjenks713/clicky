@@ -5,6 +5,8 @@ An iteractive React app. Clicky on an image to raise your score, don't click on 
 
 [Rick and Morty Clicky App](https://jjenks713.github.io/clicky/)
 
+![App](https://github.com/jjenks713/clicky/blob/master/public/images/Capture.JPG)
+
 See more info about React below
 -----
 
